@@ -1,0 +1,10 @@
+<launch>
+    <arg name="" default="" />
+    <arg name="no_ground_point_topic" default="/filtered_points_no_ground"/>
+    <arg name="ground_point_topic" default="/filtered_points_ground"/>
+
+    <node pkg="pcl_test" type="pcl_test_node" name="pcl_test_node" output="screen">
+        <param name="no_ground_point_topic" value="$(arg no_ground_point_topic)"/>
+        <param name="ground_point_topic" value="$(arg ground_point_topic)"/>
+    </node>
+</launch>
