@@ -8,7 +8,7 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "plane_ground_filter");
 
-    ros::NodeHandle nh;
+    ros::NodeHandle nh("~");
 
     PlaneGroundFilter core(nh);
     return 0;
